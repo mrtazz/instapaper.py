@@ -1,0 +1,66 @@
+.\" generated with Ronn/v0.5
+.\" http://github.com/rtomayko/ronn/
+.
+.TH "INSTAPAPER" "1" "May 2010" "" "instapaper"
+.
+.SH "NAME"
+\fBinstapaper\fR \-\- add URLs to instapaper.com
+.
+.SH "SYNOPSIS"
+\fBinstapaper\fR url
+.
+.br
+\fBinstapaper\fR [\fIOPTIONS\fR] url
+.
+.br
+.
+.SH "DESCRIPTION"
+\fBinstapaper\fR is a utility to easily add URLs to the instapaper.com
+read later service.
+.
+.SH "OPTIONS"
+In default mode \fBinstapaper\fR reads the login credentials from the \fB.instapaperrc\fR config file in the users's home directory. For the
+config format see \fBCONFIGURATION\fR.
+.
+.P
+These options can be provided to the application:
+.
+.TP
+\fB\-u\fR, \fB\-\-user\fR
+  Set the instapaper.com username.
+.
+.TP
+\fB\-p\fR, \fB\-\-password\fR
+  Set the instapaper.com password.
+.
+.TP
+\fB\-t\fR, \fB\-\-title\fR
+  Set title for the URL to add.
+.
+.TP
+\fB\-h\fR, \fB\-\-help\fR
+  Show usage information.
+.
+.SH "CONFIGURATION"
+Login credentials for instapaper.com are read from the .instapaperrc file
+in the user's home directory if present. User information needs to be
+provided there in the format \fBusername:password\fR.
+.
+.SH "EXAMPLES"
+.
+.nf
+
+$ instapaper http://www.google.com
+$ instapaper \-u username \-p password http://www.google.com
+$ instapaper \-t "google search page" http://www.google.com
+.
+.fi
+.
+.SH "BUGS"
+\fIhttp://github.com/mrtazz/instapaper.py\fR
+.
+.SH "AUTHOR"
+Daniel Schauenberg \fId@unwiredcouch.com\fR
+.
+.SH "SEE ALSO"
+\fIhttp://instapaper.com\fR

@@ -1,0 +1,56 @@
+instapaper(1) -- add URLs to instapaper.com
+========================================
+
+## SYNOPSIS
+
+`instapaper` url<br>
+`instapaper` [<OPTIONS>] url<br>
+
+## DESCRIPTION
+
+`instapaper` is a utility to easily add URLs to the instapaper.com
+read later service.
+
+## OPTIONS
+
+In default mode `instapaper` reads the login credentials from the
+`.instapaperrc` config file in the users's home directory. For the
+config format see `CONFIGURATION`.
+
+These options can be provided to the application:
+
+  * `-u`, `--user`:
+      Set the instapaper.com username.
+
+  * `-p`, `--password`:
+      Set the instapaper.com password.
+
+  * `-t`, `--title`:
+      Set title for the URL to add.
+
+  * `-h`, `--help`:
+      Show usage information.
+
+## CONFIGURATION
+
+Login credentials for instapaper.com are read from the .instapaperrc file
+in the user's home directory if present. User information needs to be
+provided there in the format `username:password`.
+
+## EXAMPLES
+
+    $ instapaper http://www.google.com
+    $ instapaper -u username -p password http://www.google.com
+    $ instapaper -t "google search page" http://www.google.com
+
+## BUGS
+
+<http://github.com/mrtazz/instapaper.py>
+
+## AUTHOR
+
+Daniel Schauenberg <d@unwiredcouch.com>
+
+## SEE ALSO
+
+<http://instapaper.com>
