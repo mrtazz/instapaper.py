@@ -1,19 +1,19 @@
-instapaper(1) -- add URLs to instapaper.com
+instapaper-py(1) -- python client for instapaper.com
 ========================================
 
 ## SYNOPSIS
 
-`instapaper` url<br>
-`instapaper` [<OPTIONS>] url<br>
+`instapaper-py` url<br>
+`instapaper-py` [<OPTIONS>] url<br>
 
 ## DESCRIPTION
 
-`instapaper` is a utility to easily add URLs to the instapaper.com
+`instapaper-py` is a utility to easily add URLs to the instapaper.com
 read later service.
 
 ## OPTIONS
 
-In default mode `instapaper` reads the login credentials from the
+In default mode `instapaper-py` reads the login credentials from the
 `.instapaperrc` config file in the users's home directory. For the
 config format see `CONFIGURATION`.
 
@@ -39,9 +39,9 @@ provided there in the format `username:password`.
 
 ## EXAMPLES
 
-    $ instapaper http://www.google.com
-    $ instapaper -u username -p password http://www.google.com
-    $ instapaper -t "google search page" http://www.google.com
+    $ instapaper-py http://www.google.com
+    $ instapaper-py -u username -p password http://www.google.com
+    $ instapaper-py -t "google search page" http://www.google.com
 
 ## BUGS
 
