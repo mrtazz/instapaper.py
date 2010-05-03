@@ -1,25 +1,25 @@
 .\" generated with Ronn/v0.5
 .\" http://github.com/rtomayko/ronn/
 .
-.TH "INSTAPAPER" "1" "May 2010" "" "instapaper"
+.TH "INSTAPAPER.PY" "1" "May 2010" "" "instapaper-py"
 .
 .SH "NAME"
-\fBinstapaper\fR \-\- add URLs to instapaper.com
+\fBinstapaper.py\fR \-\- python client for instapaper.com
 .
 .SH "SYNOPSIS"
-\fBinstapaper\fR url
+\fBinstapaper.py\fR url
 .
 .br
-\fBinstapaper\fR [\fIOPTIONS\fR] url
+\fBinstapaper.py\fR [\fIOPTIONS\fR] url
 .
 .br
 .
 .SH "DESCRIPTION"
-\fBinstapaper\fR is a utility to easily add URLs to the instapaper.com
+\fBinstapaper.py\fR is a utility to easily add URLs to the instapaper.com
 read later service.
 .
 .SH "OPTIONS"
-In default mode \fBinstapaper\fR reads the login credentials from the \fB.instapaperrc\fR config file in the users's home directory. For the
+In default mode \fBinstapaper.py\fR reads the login credentials from the \fB.instapaperrc\fR config file in the users's home directory. For the
 config format see \fBCONFIGURATION\fR.
 .
 .P
@@ -50,9 +50,9 @@ provided there in the format \fBusername:password\fR.
 .
 .nf
 
-$ instapaper http://www.google.com
-$ instapaper \-u username \-p password http://www.google.com
-$ instapaper \-t "google search page" http://www.google.com
+$ instapaper.py http://www.google.com
+$ instapaper.py \-u username \-p password http://www.google.com
+$ instapaper.py \-t "google search page" http://www.google.com
 .
 .fi
 .
